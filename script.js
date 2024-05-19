@@ -1,9 +1,10 @@
-import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.module.js";
-import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/controls/OrbitControls.js'
-import { OBJLoader } from "https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/loaders/OBJLoader.js";
-import { FBXLoader } from "https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/loaders/FBXLoader.js";
-import { MTLLoader } from "https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/loaders/MTLLoader.js";
-import Stats from 'https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/libs/stats.module.js'
+import * as THREE from './libs/three/three.module.js';
+import { OrbitControls } from './libs/three/controls/OrbitControls.js';
+import { OBJLoader } from './libs/three/loaders/OBJLoader.js';
+import { FBXLoader } from './libs/three/loaders/FBXLoader.js';
+import { MTLLoader } from './libs/three/loaders/MTLLoader.js';
+import Stats from './libs/three/libs/stats.module.js';
+
 // standard global variables
 var container, scene, camera, renderer, controls, stats, parameters;
 let windowHalfX = window.innerWidth / 2;
