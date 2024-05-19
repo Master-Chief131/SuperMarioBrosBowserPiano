@@ -1,4 +1,4 @@
-import * as THREE from "https://esm.sh/three";
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.module.js";
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/controls/OrbitControls.js'
 import { OBJLoader } from "https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/loaders/OBJLoader.js";
 import { FBXLoader } from "https://cdn.jsdelivr.net/npm/three@0.150.1/examples/jsm/loaders/FBXLoader.js";
