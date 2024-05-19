@@ -243,36 +243,6 @@ function init() {
 	);
 	  });
 
-  //Agregar el castillo
-    // const mtlLoader6 = new MTLLoader();
-    // mtlLoader6.load("models/peach_castle.mtl", (material6) => {
-    // material6.preload();
-    // console.log(material6);
-    // const objLoader6 = new OBJLoader();
-    // objLoader6.setMaterials(material6);
-    // objLoader6.load(
-    //   "models/peach_castle.obj",
-    //   (object6) => {
-    //   scene.add(object6);
-    //   //move object to the top
-    //   object6.position.y = -200;
-    //   //to the left of the box
-    //   object6.position.x = 275;
-    //   object6.position.z = -2000;
-    //   //make the object bigger
-    //   object6.scale.x = 10;
-    //   object6.scale.y = 10;
-    //   object6.scale.z = 10;
-    //   },
-    //   (xhr) => {
-    //   console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
-    //   },
-    //   (error) => {
-    //   console.log(error);
-    //   }
-    // );
-    //   });
-
       //Agregar a la princesa
       const mtlLoader7 = new MTLLoader();
       mtlLoader7.load("models/princess_peach.mtl", (material7) => {
@@ -402,12 +372,6 @@ function init() {
       skyBox.position.y += speed;
       skyBox.position.z += speed;
       // scene.fog = new THREE.FogExp2(0x990099, 0.00025);
-      
-      // LIGHT
-      // var light = new THREE.AmbientLight(0xffffff, 3.5);
-      // light.position.set(0, 250, 0);
-      // scene.add(light);
-      //add a light that illuminates everything evenly
 
       // LIGHT
   var light1, light2, light3;
@@ -468,24 +432,6 @@ function init() {
     
       animate();
     }    
-
-    // function animateRotation(object, axis, speed) {
-    //   function animate() {
-    //     requestAnimationFrame(animate);
-    //     object.rotation[axis] += speed;
-    //     renderer.render(scene, camera);
-    //   }
-    //   animate();
-    // }
-
-    // function animate() {
-    //   setTimeout(function () {
-    //     requestAnimationFrame(animate);
-    //     render();
-    //     stats.update();
-    //     update();
-    //   }, 16.67);
-    // }
 
     function animate() {
       requestAnimationFrame(animate);
