@@ -5,14 +5,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<script type="importmap">
-	{
-		"imports": {
-			"three": "https://unpkg.com/three/build/three.module.js"
-		}
-	}
-	</script>
-	<div id="container"></div>
-	<script type="module" src="script.js"></script>
+	<script type="module"> import three from "https://cdn.jsdelivr.net/npm/three/+esm"</script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js/+esm",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three/examples/jsm/+esm"
+    }
+  }
+</script>
+
+<div class="night" id="Toque">
+            <audio id="mySong" src="https://raw.githubusercontent.com/Master-Chief131/ComputacionGrafica/refs/heads/luis2/public/musics/Peaches_Español.mp3?raw=true" controls autoplay loop></audio>
+            <div id="messageContainer"></div>
+        </div>
+<div id="container"></div>
 </body>
 </html>
